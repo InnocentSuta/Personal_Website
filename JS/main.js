@@ -1,3 +1,18 @@
+// sticky nav
+if ($(window).width() > 1000) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 40) {
+            $('#Top_navbar').addClass("fixed-top");
+            // add padding top to show content behind navbar
+            $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+        } else {
+            $('#Top_navbar').removeClass("fixed-top");
+            // remove padding top from body
+            $('body').css('padding-top', '0');
+        }
+    });
+}
+
 // start Text Rotation
 
 var TxtRotate = function (el, toRotate, period) {

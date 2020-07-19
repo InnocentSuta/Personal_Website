@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="100" data-target=".navbar">
   <!-- NAVIGATION -->
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="Top_navbar">
       <div class="container">
         <a class="navbar-brand" href="#home"><span>I</span>nnocent</a>
 
@@ -84,9 +84,12 @@
   <section class="about-section py-5" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="about-content">
+        <div class="col-sm-7">
+          <div class="about-title">
             <h1 class="py-3">About Me</h1>
+          </div>
+          <div class="about-content">
+
             <h6>
               Hello, I'm Innocent Suta, a Bsc (Hons) in Information Technology
               (Data Science) student at PIHE
@@ -110,15 +113,16 @@
               Feel free to contact me for collaboration or for any
               opportunities
             </p>
-
-            <button class="btn btn-light px-4 py-2">Get In Touch</button>
-            <button class="btn btn-light px-4 py-2">Get Resume</button>
+            <div class="about-btn">
+              <button class="btn btn-light px-4 py-2">Get In Touch</button>
+              <button class="btn btn-light px-4 py-2">Get Resume</button>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-6">
-          <div class="about-img">
-            <img src="./images/innocent.jpg" alt="" />
+        <div class="col-sm-5">
+          <div class="about-img d-flex justify-content-center align-items-center p-5">
+            <img class="img-fluid rounded-circle" src="./images/innocent.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -129,7 +133,7 @@
   <section id="resume"></section>
 
   <!-- SERVICES -->
-  <section id="services">
+  <section id="service">
     <div class="container-fluid px-md-5">
       <div class="row justify-content-center py-3 mt-5">
         <div class="col-md-12 text-center service-title">
@@ -189,7 +193,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="project">
+  <section id="projects">
     <div class="container-fluid">
       <div class="row justify-content-center py-3 mt-5">
         <div class="col-md-12 text-center service-title">
