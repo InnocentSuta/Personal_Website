@@ -396,3 +396,38 @@ body {
 
 
 /* PORTFOLIO SECTION */
+
+
+/* FOOTER  */
+
+footer .social-links {
+  padding-bottom: 10px;
+}
+
+footer .social-links a {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  background: #fff;
+  color: #ec5b53;
+  line-height: 1;
+  padding: 10px 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #ec5b53;
+}
+
+footer .social-links a:hover {
+  background: #ec5b53;
+  color: #fff;
+}
+
+#footer {
+  background: #fff;
+  padding: 24px 0;
+  font-size: 14px;
+  box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
+}
