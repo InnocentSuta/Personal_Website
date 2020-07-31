@@ -5,6 +5,7 @@ html,
 body {
   overflow-x: hidden;
   font-family: "Raleway", sans-serif;
+  background-color: #f4f4f4;
 }
 
 .section-title h2 {
@@ -396,7 +397,72 @@ body {
 
 
 /* PORTFOLIO SECTION */
+.project_content .card-body{
+  position: relative;
+}
 
+.project_content .project_tag_box {
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  text-align: center;
+  top: -15px;
+  overflow: hidden;
+  
+}
+.project_content .project_tag {
+  display: inline-block;
+  padding: 5px 15px 5px;
+  background-color: #ec5b53;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.project_content .project_tag .tag {
+  font-family: 'Inconsolata', monospace;
+  display: inline-block;
+  font-size:16px;
+  margin-bottom: 0; 
+}
+
+.project_content .technology_used {
+  display: inline-block;
+}
+
+.project_content .links{
+  display: inline-block;
+  float: right;
+}
+.project_title{
+  margin-top: 20px;
+  font-family: "Spectral", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ec5b53;
+  letter-spacing: 2px;
+}
+
+.technology_used span { 
+  margin: 4px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 4px;
+  color:#ec5b53;
+  border: 1px solid black;
+  background: transparent;
+}
+
+.links a {
+  font-size: 20px;
+  text-shadow: 1px 1px 1px;
+  margin: 10px;
+  padding: 4px;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  color: #ec5b53;
+}
 
 /* FOOTER  */
 
