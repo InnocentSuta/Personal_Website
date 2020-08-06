@@ -1,3 +1,11 @@
+$(document).ready(function () {
+    AOS.init({
+        duration: 1000,
+        once: true 
+    }); 
+});
+
+
 // sticky nav
 if ($(window).width() > 1000) {
     $(window).scroll(function () {
