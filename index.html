@@ -420,10 +420,11 @@
             <div class="technology_used" data-aos="zoom-in">
               <span>HTML</span>
               <span>CSS</span>
+              <span>PHP</span>
               <span>JavaScript</span>
               <span>Bootstrap 4</span>
             </div>
-            <div class="links" data-aos="zoom-in">
+            <div class="links mt-4 ml-0" data-aos="zoom-in">
               <a href="https://innocentsuta.github.io/Personal_website/" target="_blank"><i
                   class="fas fa-external-link-alt"></i></a>
               <a href="https://github.com/InnocentSuta/Personal_website" target="_blank"><i
@@ -442,7 +443,7 @@
   <!-- <section id="blog"></section> -->
   <!-- CONTACT -->
   <section id="contact" class="contact py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="box-shadow ">
       <div class="row justify-content-center">
         <div class="col-md-12 text-center section-title">
@@ -454,7 +455,62 @@
         </div>
       </div>
 
-      
+      <div class="row">
+        <div class="col-md-7 mb-5">
+          <form action="send_contact.php" method="POST">
+            <div class="form-content">
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label class="text-black" for="Fname">First Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="Fname" name="Fname" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="Lname">Last Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="Lname" name="Lname" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label class="text-black" for="Email">Email<span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" name="Email" id="Email" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label class="text-black" for="Subject">Subject<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" name="Subject" id="Subject">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="Message" class="text-black">Message </label>
+                  <textarea name="Message" id="Message" cols="30" rows="7" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-12">
+                  <input type="submit" class="send btn btn-lg btn-outline-success text-uppercase" value="Send">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5 py-5">
+          <div class="contact-info mb-3">
+            <p class="mb-0 c-title">Address:</p>
+            <p class="mb-4"> <a href="#"> Midrand, South Africa</a></p>
+        
+            <p class="mb-0 c-title">Phone:</p>
+            <p class="mb-4"><a href="#">+27 65 132 5845</a></p>
+        
+            <p class="mb-0 c-title">Email Address:</p>
+            <p class="mb-4"><a href="#">sutainnocent@gmail.com</a></p>
+        
+          </div>
+        
+        </div>
+
+      </div>
     </div>
     </div>
   </section>
